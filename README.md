@@ -62,13 +62,42 @@ Create web page using Wordpress
   
 ###2015 10 04
 *  Reinstall Wordpress, want to anchor at `www.worksatscale.com` not `www.worksatscale.com/wordpress`
+*  Note: info on redirecting from `wordpress` install directory to site root uses Apache file `.htaccess` that's currently in Akismet plugin
+*  Install in Web Root directory for now
+*  Update current plugins (Akismet)
+*  Delete `Hello Dolly` plugin
+*  Install new plugins
+  * Jetpack
+  * All in One SEO Pack
+  * SEO Friendly Images
+  * Google XML Sitemaps
+  * W3 Total Cache
+  * iThemes Security
+  * UpdraftPlus Backup and Restoration
+  * Wordpress Zero Spam
+  * Stop Spammers Spam Prevention
+  * Favicon by RealFaviconGenerator
+* Restart XAMPP services for local site (to allow copy/paste content from local site)
+  * Apache web server
+  * MySQL DB
+* Jetpack config
+* W3 Cache config
+* Stop Spammers config
+  * Get [Google Safe Browsing API Key](https://developers.google.com/safe-browsing/key_signup)
+* Set up `info@worksatscale.com` and forwarding
+* set up [CloudFlare CDN](https://server118.web-hosting.com:2083/cpsess8050042956/frontend/x3/cloudflare/index.html) through Namecheap
+  * Apparently kills https using free, partner with Namecheap plan
+  * CDN [CloudFlare Dev mode](https://www.cloudflare.com/a/caching/worksatscale.com#development_mode) does a pass through for 3 hours
+  * Stop use of CloudFlare while site is under development
+  * Add DNS A record for www.worksatscale.com to point to `68.65.122.176`
 
 
 
  
 
 -------------------------
-##Starting Services
+##Starting XAMPP Services 
+* allows functions on `localsite`
 * `cd /opt/lampp/`
 * `sudo ./manager-linux-x64.run`
  
