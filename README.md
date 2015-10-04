@@ -60,7 +60,10 @@ Create web page using Wordpress
   * Wordpress 4.3.1; Twenty Fifteen theme
   * `http://localhost:1337/wordpress/wp-admin/`
   
-###2015 10 02
+###2015 10 04
+*  Reinstall Wordpress, want to anchor at `www.worksatscale.com` not `www.worksatscale.com/wordpress`
+
+
 
  
 
@@ -68,6 +71,27 @@ Create web page using Wordpress
 ##Starting Services
 * `cd /opt/lampp/`
 * `sudo ./manager-linux-x64.run`
+ 
+-------------------------
+##Plugs-ins
+* General
+  * Jetpack
+* SEO
+  * All in One SEO Pack
+  * SEO Friendly Images
+  * Google XML Sitemaps
+* Cache
+  * W3 Total Cache
+* Security
+  * iThemes Security
+* Backup
+  * UpdraftPlus Backup and Restoration
+* Anti-Spam
+  * Wordpress Zero Spam
+  * Stop Spammers Spam Prevention
+* Contact Form (Use Jetpack)
+* Favicon
+  * Favicon by RealFaviconGenerator (instead of Captain Favicon)
 
 -------------------------
 ##References
